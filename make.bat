@@ -45,7 +45,9 @@ exit
 :compile
 echo.
 @echo === Building ===
-cl /EHsc *.cpp
+cl /EHsc src/*.cpp
+@echo === Deleting *.obj files ===
+del *.obj
 @echo === Finished ===
 echo.
 
