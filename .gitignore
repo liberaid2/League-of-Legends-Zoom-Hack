@@ -2,3 +2,5 @@ main.exe
 obj/
 *.project
 *.workspace
+.codelite/
+.clang/

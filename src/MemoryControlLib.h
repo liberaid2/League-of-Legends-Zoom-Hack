@@ -6,6 +6,15 @@
 #include <TlHelp32.h>
 #include <string>
 
+/* 
+ * Basic C++ class that can: 
+ * - Open process
+ * - Close process 
+ * - Write smth to memory 
+ * - Read smth from memory 
+ * - Allocate memory
+ * - Release allocated memory
+ * */
 class MemoryControlLib
 {
 	public:
