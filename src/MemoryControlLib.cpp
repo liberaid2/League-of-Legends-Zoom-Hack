@@ -20,16 +20,6 @@ void MemoryControlLib::InitPID()
 {
 	m_pID = 0;
 	
-	/*
-	m_pID = 0;
-	size_t nameLen = strlen(m_pName) + 1;
-	
-	const size_t newSize = 256;
-	size_t convertedChars = 0;
-	wchar_t procName[newSize];
-	mbstowcs_s(&convertedChars, procName, nameLen, m_pName, _TRUNCATE);
-	*/
-	
 	HANDLE snapshot = CreateToolhelp32Snapshot(TH32CS_SNAPPROCESS, 0);
 	PROCESSENTRY32 pInfo;
 	pInfo.dwSize = sizeof(PROCESSENTRY32);

@@ -1,1 +1,4 @@
 main.exe
+obj/
+*.project
+*.workspace

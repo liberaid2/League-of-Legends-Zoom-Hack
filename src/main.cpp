@@ -16,6 +16,8 @@ int main(){
 	{
 		byte nopBuffer[] = {0x90, 0x90, 0x90};
 		mcLib->Write(nopBuffer, sign, 3);
+	} else {
+		printf("League of Legends game not found!\n");
 	}
 	
 	mcLib->Close();
